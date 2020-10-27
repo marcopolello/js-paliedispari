@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(https://lh3.googleusercontent.com/proxy/JfCAaFcKqegb29pLtOmcIZe2dy9fK9MvjLScU5Sk0MDS6TYe1EE-4TdeJHLcInRl40ymkH19QoOaNgKj5NTfPFSfXdU6Qyb1OuGOtqqKB3HmsWSDBPAQ7HfxRcZAVxeO2lEHRapOhOiPPmtQOE-KxDVUlQHg8V4);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main{
+  min-height: 300px;
+  /* background-color: yellow; */
+  margin: 50px 100px 0;
+  background-color: green;
+}
+#entrata{
+  text-align: center;
+  width: 100%;
+  /* background-color: blue; */
+  font-size: 50px;
+
+}
+.container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 200px;
+  /* background-color: red; */
+}
+.sx{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dx{
+  width: 50%;
+  /* background-color: green; */
+  text-align: center;
+}
+.dx h6{
+  font-size: 20px;
+  margin: 20px;
+}
+label{
+  display: block;
+  margin-bottom: 10px;
+}
+input{
+  margin-bottom: 10px;
+}
+.bottoni{
+  margin-left: 30px;
+}
+input[type=button]{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5%;
+}
