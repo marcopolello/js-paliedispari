@@ -9,21 +9,24 @@
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 var scelta=prompt("pari o dispari");
 var numero=parseInt(prompt("numero da 1 a 5"));
-console.log(scelta, numero, "scelte utente");
+console.log(scelta, numero, "<--scelte utente");
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 var nRandom = randomNumbers();
-console.log(nRandom, "numero random");
+console.log(nRandom, "<--numero random");
+// funzione che mi da un numero random tra 1 e 5
 function randomNumbers()
 {
   return Math.floor(Math.random() * 5) + 1;
 }
 // Sommiamo i due numeri
 var somma = nRandom + numero;
-console.log(somma, "somma dei 2 numeri");
+console.log(somma, "<--somma dei 2 numeri");
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 var risultato = establish(somma);
 console.log(risultato, "funzione mi dice se è pari o dispari");
-function establish() {
+// funzione che stabilisce se somma numeri è pari o dispari
+function establish()
+{
   if (somma % 2 === 0) {
     return "pari";
   } else {
@@ -32,7 +35,9 @@ function establish() {
 }
 // Dichiariamo chi ha vinto.
 if (risultato == scelta) {
+  console.log("ha vinto l'utente");
   document.getElementById('stampa').innerHTML = "hai vinto";
 } else {
+  console.log("l'utente da perso");
   document.getElementById('stampa').innerHTML = "hai perso";
 }
