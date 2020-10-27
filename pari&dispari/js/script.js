@@ -20,6 +20,7 @@ programma.addEventListener('click',function()
   var scelta= (document.getElementById('a')).value;
   var numero= parseInt(document.getElementById('b').value);
   console.log(scelta, numero, "<--scelte utente");
+  // inserisco un alert per far si che utente decida pari o dispari
   if (scelta != ("pari" || "dispari"))
   {
     alert("devi decidere pari o dispari per giocare")
