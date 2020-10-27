@@ -20,6 +20,10 @@ programma.addEventListener('click',function()
   var scelta= (document.getElementById('a')).value;
   var numero= parseInt(document.getElementById('b').value);
   console.log(scelta, numero, "<--scelte utente");
+  if (scelta != ("pari" || "dispari"))
+  {
+    alert("devi decidere pari o dispari per giocare")
+  }
   // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
   var nRandom = randomNumbers();
   console.log(nRandom, "<--numero random");
@@ -51,7 +55,7 @@ programma.addEventListener('click',function()
     console.log("ha vinto l'utente");
     document.getElementById('stampa').innerHTML = "quindi hai vinto grande!";
   } else {
-    console.log("l'utente da perso");
+    console.log("l'utente ha perso");
     document.getElementById('stampa').innerHTML = "quindi hai perso mi dispiace";
   }
 
