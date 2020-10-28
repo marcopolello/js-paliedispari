@@ -26,13 +26,13 @@ programma.addEventListener('click',function()
     alert("devi decidere pari o dispari per giocare")
   }
   // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
-  var nRandom = randomNumbers();
+  var nRandom = randomNumbers(5);
   console.log(nRandom, "<--numero random");
   document.getElementById("c").innerHTML = "il numero scelto dal pc è: " + nRandom;
   // funzione che mi da un numero random tra 1 e 5
-  function randomNumbers()
+  function randomNumbers(x)
   {
-    return Math.floor(Math.random() * 5) + 1;
+    return Math.floor(Math.random() * x) + 1;
   }
   // Sommiamo i due numeri
   var somma = nRandom + numero;
