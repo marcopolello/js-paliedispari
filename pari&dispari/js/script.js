@@ -43,9 +43,9 @@ programma.addEventListener('click',function()
   var risultato = establish(somma);
   console.log(risultato, "funzione mi dice se è pari o dispari");
   // funzione che stabilisce se somma numeri è pari o dispari
-  function establish()
+  function establish(y)
   {
-    if (somma % 2 === 0) {
+    if (y % 2 === 0) {
       return "pari";
     } else {
       return "dispari";
