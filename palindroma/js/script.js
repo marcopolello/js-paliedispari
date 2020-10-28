@@ -21,7 +21,7 @@ function rovescia(input)
   }
   // 2 step: analizzare la parola invertita e paragonarla alla parola data dall'input
   // 3 step: se le parole combaciano dara una stampa, se non è cosi una stampa diversa
-  if (parolaRovesciata === inputUtente) {
+  if (parolaRovesciata.toUpperCase() === inputUtente.toUpperCase()) {
     return "la parola è palindroma";
   } else {
     return "la parola non è palindroma";
